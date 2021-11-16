@@ -4,16 +4,21 @@ import { Person } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) =>({
   button:{
-    ... theme.myButton
+    ...theme.myButton
   },
 }));
 
 
 
 function App() {
+  
   const classes = useStyles();
   return <div>
-  
+    <Button
+      variant="contained"
+      startIcon={<Person />}
+      className={classes.button}
+    >TExt</Button>
 
   </div>;
 
