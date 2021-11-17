@@ -13,4 +13,4 @@ function Rightbar() {
 
 }
 
-export default Rightbar;
+export default RightBar;
