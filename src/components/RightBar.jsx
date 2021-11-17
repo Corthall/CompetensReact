@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({}));
 
 
 
-function Rightbar() {
+function RightBar() {
 
   const classes = useStyles();
   return <div></div>;
