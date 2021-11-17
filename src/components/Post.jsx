@@ -37,4 +37,4 @@ function Post() {
 
 }
 
-export default Rightbar;
+export default Post;
