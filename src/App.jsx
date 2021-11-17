@@ -22,7 +22,6 @@ function App() {
           <Rightbar />
         </Grid>
       </Grid>
-      <Feed />
     </div>
   );
 }
