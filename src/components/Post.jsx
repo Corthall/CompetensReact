@@ -3,8 +3,17 @@ import { Card, CardActionArea, CardContent, makeStyles, Typography, CardMedia } 
 const useStyles = makeStyles((theme) => ({
 media: {
     display: "flex",
-    borderRadius: "3px"
-
+    borderRadius: "3px",
+    height: "100%",
+    width: "100%"
+    
+},
+img: {
+    width: "100%"
+},
+cardContainer: {
+    height:200,
+    width:400
 }
 
 }));
@@ -15,7 +24,7 @@ function Post() {
 
   const classes = useStyles();
   return <Card>
-      <CardActionArea>
+      <CardActionArea className={classes.cardContainer}>
         <CardMedia className={classes.media} 
         image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.jKPKBFXi0tbftrhuxMgrwgHaE8%26pid%3DApi&f=1"
         title="Beach side"
