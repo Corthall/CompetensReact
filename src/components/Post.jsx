@@ -1,6 +1,13 @@
 import { Card, CardActionArea, CardContent, makeStyles, Typography, CardMedia } from '@material-ui/core'
 
-const useStyles = makeStyles((theme) => ({}));
+const useStyles = makeStyles((theme) => ({
+media: {
+    display: "flex",
+    borderRadius: "3px"
+
+}
+
+}));
 
 
 
