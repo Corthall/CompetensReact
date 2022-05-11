@@ -1,7 +1,13 @@
-import { Container, makeStyles, Typography } from '@material-ui/core'
-import { Home, Person } from '@material-ui/icons';
+import { Container, makeStyles,  Typography } from '@material-ui/core'
+import { Home, Person ,MenuBook} from '@material-ui/icons';
 
-const useStyles = makeStyles((theme) => ({}));
+const useStyles = makeStyles((theme) => ({
+    leftBar:{
+      position: "fixed",
+      
+
+    }
+}));
 
 
 
@@ -9,7 +15,8 @@ function Leftbar() {
 
   const classes = useStyles();
   return (
-    <Container className={classes.container}>
+    
+    <Container className={classes.leftBar}>
       <div className={classes.item}>
         <Home className={classes.icon} />
         <Typography className={classes.text}>Homepage</Typography>
@@ -19,8 +26,8 @@ function Leftbar() {
         <Typography className={classes.text}>Friends</Typography>
       </div>
       <div className={classes.item}>
-        <Home className={classes.icon} />
-        <Typography className={classes.text}>Homepage</Typography>
+        <MenuBook className={classes.icon} />
+        <Typography className={classes.text}>News</Typography>
       </div>
       <div className={classes.item}>
         <Home className={classes.icon} />

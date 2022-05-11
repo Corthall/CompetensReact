@@ -1,4 +1,4 @@
-import { Grid, makeStyles } from "@material-ui/core";
+import { Grid, makeStyles, Box } from "@material-ui/core";
 import Navbar from "./components/Navbar";
 import Feed from "./components/Feed";
 import Leftbar from "./components/Leftbar";
@@ -9,7 +9,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]:{
       display:"none"
     }
-  }
+  },
+  pageContent:{
+    display: "flex",
+    
+  },
+  appBarSpacer: theme.mixins.toolbar
 
 }));
 
@@ -17,8 +22,11 @@ function App() {
   const classes = useStyles();
   return (
     <div class="pageContent" >
-      <Navbar />
-      <Grid container>
+      <Navbar className={classes.Navbar}/>
+      <div className={classes.appBarSpacer}/>
+      <Box m={3}>
+
+      <Grid className={classes.Content} container spacing={3} >
         <Grid item sm={2} xs={2}>
           <Leftbar />
         </Grid>
@@ -29,6 +37,7 @@ function App() {
           <RightBar />
         </Grid>
       </Grid>
+      </Box>
     </div>
   );
 }

@@ -3,8 +3,8 @@ import Post from "./Post";
 import { Container } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
-  container: {
-    paddingTop: theme.spacing(10),
+  feed: {
+    paddingTop: theme.spacing(80),
   },
 }));
 
@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
 const Feed = () => {
   const classes = useStyles();
   return (
-    <Container classname={classes.container}>
+    <Container classname={classes.feed}>
       <Post />
       <Post />
       <Post />
